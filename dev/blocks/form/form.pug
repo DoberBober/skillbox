@@ -1,12 +1,15 @@
 section.form
 	h2.form__heading Запишитесь на&nbsp;курс
+
+	ul.form__errors
+
 	.form__info
 		p Старт курса
 			b  15 июня
 		p Осталось
 			b  12 мест
 
-	form(action="#").form__form
+	form(action="#").form__form#form
 		.form__block
 			label(for="name").visually-hidden Ваше имя
 			input(type="text" id="name" name="name" placeholder="Имя").form__input
