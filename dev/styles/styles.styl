@@ -1,6 +1,10 @@
 @import 'helpers/mixins'
 // @import 'helpers/variables'
 
++webfont("Roboto", "RobotoLight", 300)
++webfont("Roboto", "RobotoRegular", 400)
++webfont("Roboto", "RobotoBold", 700)
+
 html
 	height 100%
 	box-sizing border-box
@@ -9,6 +13,10 @@ body
 	min-height 100%
 	min-width 320px
 	margin 0
+	font-family 'Roboto', Arial, sans-serif
+
+input, textarea, button
+	font-family 'Roboto', Arial, sans-serif
 
 *, *::before, *::after
 	box-sizing inherit
@@ -33,17 +41,9 @@ img
 	clip-path inset(100%)
 
 .container
-	max-width 1170px
+	max-width 1200px
 	margin 0 auto
 	padding 0 15px
-
-@media (min-width: 1024px)	
-	body
-		display flex
-		flex-direction column
-		
-	.page
-		flex-grow 1
 
 // @import '../blocks/_mixins/**/*.styl'
 @import '../blocks/*/*.styl'
