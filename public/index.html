@@ -8,6 +8,67 @@
 			<link href="css/styles.css" rel="stylesheet">
 		</head>
 	<body>
-		<div class="sprite"></div>
+		<div class="sprite"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 31 41" id="ruble"><path d="M17.863.813c4.147 0 7.37 1.098 9.666 3.296 2.314 2.198 3.47 5.092 3.47 8.681 0 3.627-1.156 6.53-3.47 8.71-2.297 2.179-5.519 3.268-9.666 3.268H9.612v11.814l4.352.769v3.462H0V37.35l4.352-.77V5.072L0 4.3V.813h17.862zM9.612 20.538h8.25c2.635 0 4.602-.724 5.902-2.17 1.317-1.466 1.976-3.306 1.976-5.522 0-2.217-.66-4.066-1.976-5.55-1.3-1.484-3.267-2.225-5.901-2.225H9.612v15.467z"/><path d="M.156 28.154h28.709v3.165H.156z"/></symbol></svg></div>
+		<main class="promo">
+			<article class="container">
+								<h1 class="heading-1">Стоимость обучения</h1>
+				<div class="card">
+					<section class="info">
+												<div class="sale info__note">
+													<div class="sale__text">Скидка</div>
+													<div class="sale__percent">40%</div>
+													<div class="sale__count">первым 20</div>
+												</div>
+						<div class="info__price info__price--old">Полная стоимость курса
+							<div class="info__cost">50 000
+										<svg width="19" height="25" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+										</svg>
+							</div>
+						</div>
+						<div class="info__price info__price--subscription">
+							<div class="info__cost">2 900
+										<svg width="31" height="40" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+										</svg>
+							</div>Рассрочка без первого взноса
+						</div>
+						<div class="info__price info__price--special">
+							<div class="info__cost">29 000
+										<svg width="19" height="29" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ruble"></use>
+										</svg>
+							</div>Для первых 20-ти
+						</div>
+					</section>
+					<section class="form">
+						<h2 class="form__heading">Запишитесь на&nbsp;курс</h2>
+						<div class="form__info">
+							<p>Старт курса<b> 15 июня</b></p>
+							<p>Осталось<b> 12 мест</b></p>
+						</div>
+						<form class="form__form" action="#">
+							<div class="form__block">
+								<label class="visually-hidden" for="name">Ваше имя</label>
+								<input class="form__input" type="text" id="name" name="name" placeholder="Имя">
+							</div>
+							<div class="form__block">
+								<label class="visually-hidden" for="phone">Ваш телефон</label>
+								<input class="form__input" type="text" id="phone" name="phone" placeholder="Телефон">
+							</div>
+							<div class="form__block">
+								<label class="visually-hidden" for="email">Ваш email</label>
+								<input class="form__input" type="email" id="email" name="email" placeholder="Email">
+							</div>
+							<div class="form__block">
+								<input class="visually-hidden form__checkbox" type="checkbox" name="aggrement" id="aggrement">
+								<label class="form__label" for="aggrement">Я согласен с условиями обработки <a href="#">персональных данных</a></label>
+							</div>
+							<button class="form__submit" type="submit">Записаться</button>
+						</form>
+					</section>
+				</div>
+			</article>
+		</main>
 	</body>
 </html>

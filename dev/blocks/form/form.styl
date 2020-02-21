@@ -1,0 +1,83 @@
+.form
+	padding 40px 25px
+
+.form__heading
+	font-weight bold
+	font-size 30px
+	line-height 36px
+	margin 0 0 31px
+
+.form__info
+	font-size 15px
+	line-height 18px
+	letter-spacing -0.5px
+	color #657195
+
+	b
+		font-size 20px
+		color var(--blue)
+
+.form__form
+	padding-top 19px
+
+.form__input
+	font-size 15px
+	line-height 28px
+	display block
+	width 100%
+	margin-bottom 20px
+	border 2px solid #E6E8F0
+	padding 14px 30px
+	color #657195
+
+.form__label
+	font-size 14px
+	line-height 21px
+	letter-spacing -0.5px
+	color #657195
+	position relative
+	display block
+	padding 2px 0 0 43px
+
+	a
+		color var(--blue)
+		text-decoration none
+		border-bottom 1px solid transparent
+		transition .2s
+
+		&:hover, &:focus
+			outline none
+			border-bottom-color var(--blue)
+
+	&::before
+		content ''
+		position absolute
+		left 0
+		top 0
+		width 24px
+		height 24px
+		border 2px solid #E6E8F0
+
+.form__checkbox:checked + .form__label
+	&::before
+		background url('../images/check.svg') center center no-repeat
+		background-size 14px 11px
+
+.form__submit
+	font-size 15px
+	line-height 20px
+	letter-spacing 1px
+	display block
+	width 100%
+	margin-top 48px
+	border 2px solid var(--blue)
+	padding 23px 10px
+	text-transform uppercase
+	color #fff
+	background var(--blue)
+	transition .2s
+	
+	&:hover, &:focus
+		outline none
+		background #fff
+		color var(--blue)

@@ -4,7 +4,17 @@ html(lang="ru")
 	+head('Главная')
 
 	body
-		.sprite
-			//- include ../../public/images/sprite.svg
-
 		include ../blocks/_mixins/_svgElement.pug
+
+		.sprite
+			include ../../public/images/sprite.svg
+
+		main.promo
+			article.container
+				include ../blocks/heading/heading.pug
+				+heading("Стоимость обучения")
+				.card
+					include ../blocks/info/info.pug
+					include ../blocks/form/form.pug
+
+

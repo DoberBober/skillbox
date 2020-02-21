@@ -1,0 +1,25 @@
+section.form
+	h2.form__heading Запишитесь на&nbsp;курс
+	.form__info
+		p Старт курса
+			b  15 июня
+		p Осталось
+			b  12 мест
+
+	form(action="#").form__form
+		.form__block
+			label(for="name").visually-hidden Ваше имя
+			input(type="text" id="name" name="name" placeholder="Имя").form__input
+		.form__block
+			label(for="phone").visually-hidden Ваш телефон
+			input(type="text" id="phone" name="phone" placeholder="Телефон").form__input
+		.form__block
+			label(for="email").visually-hidden Ваш email
+			input(type="email" id="email" name="email" placeholder="Email").form__input
+
+		.form__block
+			input(type="checkbox" name="aggrement" id="aggrement").visually-hidden.form__checkbox
+			label(for="aggrement").form__label Я согласен с условиями обработки 
+				a(href="#") персональных данных
+
+		button(type="submit").form__submit Записаться

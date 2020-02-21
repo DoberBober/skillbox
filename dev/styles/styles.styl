@@ -1,9 +1,9 @@
 @import 'helpers/mixins'
-// @import 'helpers/variables'
+@import 'helpers/variables'
 
-+webfont("Roboto", "RobotoLight", 300)
-+webfont("Roboto", "RobotoRegular", 400)
-+webfont("Roboto", "RobotoBold", 700)
+webfont("Roboto", "RobotoLight", 300)
+webfont("Roboto", "RobotoRegular", 400)
+webfont("Roboto", "RobotoBold", 700)
 
 html
 	height 100%
@@ -43,7 +43,13 @@ img
 .container
 	max-width 1200px
 	margin 0 auto
-	padding 0 15px
+
+@media (min-width: 768px)
+	.container
+		padding 0 30px
+
+.promo
+	padding 55px 0
 
 // @import '../blocks/_mixins/**/*.styl'
 @import '../blocks/*/*.styl'

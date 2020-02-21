@@ -1,0 +1,58 @@
+.info
+	position relative
+	margin-top 85px
+	padding 88px 20px 42px
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	text-align center
+	background var(--blue)
+	color #fff
+
+.info__price
+	font-size 15px
+	line-height 18px
+	letter-spacing -0.5px
+
+	svg
+		fill #fff
+
+.info__cost
+	font-weight 300
+	font-size 40px
+	line-height 53px
+	letter-spacing -2px
+
+.info__price--old
+	opacity .4
+
+	.info__cost
+		margin-top 7px
+		font-size 36px
+		line-height 47px
+		position relative
+
+		&::before
+			content ''
+			position absolute
+			width 80%
+			height 2px
+			background #fff
+			left 0
+			right 0
+			margin 0 auto
+			top 50%
+			transform translateY(-50%)
+
+.info__price--subscription
+	font-weight bold
+	font-size 18px
+	line-height 21px
+	margin 11px 0 23px
+
+	.info__cost
+		font-weight normal
+		font-size 56px
+		line-height 74px
+		margin-bottom -3px

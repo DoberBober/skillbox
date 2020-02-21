@@ -1,0 +1,17 @@
+section.info
+	include ../sale/sale.pug
+	+sale("Скидка", "40%", "первым 20", " info__note")
+
+	.info__price.info__price--old Полная стоимость курса
+		.info__cost 50 000
+			+svgElement('ruble', 19, 25)
+
+	.info__price.info__price--subscription
+		.info__cost 2 900
+			+svgElement('ruble', 31, 40)
+		| Рассрочка без первого взноса
+
+	.info__price.info__price--special
+		.info__cost 29 000
+			+svgElement('ruble', 19, 29)
+		| Для первых 20-ти
