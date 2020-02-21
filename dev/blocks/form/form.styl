@@ -113,8 +113,42 @@
 	.form__submit
 		margin-top 31px
 
+	.form__checkbox:focus + .form__label
+		&::before
+			border-color var(--blue)
+
 	.form__checkbox:checked + .form__label
 		&::before
 			background-image url('../images/check--white.svg')
 			background-color var(--blue)
 			border-color var(--blue)
+
+@media (min-width: 1170px)
+	.form
+		width 50%
+		padding 46px 85px 10px
+
+	.form__heading
+		text-align left
+		font-size 34px
+		line-height 40px
+		letter-spacing -0.5px
+		margin-bottom 16px
+	
+	.form__info
+		padding 0 40px 0 0
+
+	.form__form
+		max-width 370px
+		display flex
+		flex-direction column
+	
+	.form__block--agreement
+		order 10
+
+	.form__submit
+		margin-top 1px
+	
+	.form__label
+		margin-left 0
+		padding-left 40px
