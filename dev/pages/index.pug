@@ -1,0 +1,16 @@
+doctype
+html(lang="ru")
+	include ../blocks/head/head.pug
+	+head('Главная')
+
+	body.frontpage
+		.sprite
+			include ../../public/images/sprite.svg
+			
+		include ../blocks/_mixins/_svgElement.pug
+
+
+		include ../blocks/_mixins/_scripts.pug
+		include ../blocks/_mixins/_styles.pug
+		+styles('plugins')
+		+scripts('plugins', 'main')
